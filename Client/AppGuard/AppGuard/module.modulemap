@@ -1,0 +1,8 @@
+framework module AppGuard {
+    umbrella header "SymbolObfuscate.h"
+    header "NHNAG.h"
+    header "Diresu.h"
+    header "Rednilb.h"
+    export *
+    module * { export * }
+}

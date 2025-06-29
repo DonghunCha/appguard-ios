@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D92E77322B301BF4009B7BAA /* SplitStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D92E77312B301BF4009B7BAA /* SplitStringViewController.m */; };
+		D92E77352B302A3C009B7BAA /* TextData.m in Sources */ = {isa = PBXBuildFile; fileRef = D92E77342B302A3C009B7BAA /* TextData.m */; };
+		D980510129D14541000C81C1 /* PolicyCheckerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D980510029D14541000C81C1 /* PolicyCheckerViewController.mm */; };
+		D980510729D17E1D000C81C1 /* Decryptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = D980510629D17E1C000C81C1 /* Decryptor.mm */; };
+		D980510C29D274A1000C81C1 /* Base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D980510829D274A1000C81C1 /* Base64.cpp */; };
+		D980510D29D274A1000C81C1 /* PacketEncryptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = D980510929D274A1000C81C1 /* PacketEncryptor.mm */; };
+		D9F9BA592988D22E0089EDA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA582988D22E0089EDA3 /* AppDelegate.m */; };
+		D9F9BA5E2988D2300089EDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F9BA5D2988D2300089EDA3 /* Assets.xcassets */; };
+		D9F9BA612988D2300089EDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F9BA5F2988D2300089EDA3 /* Main.storyboard */; };
+		D9F9BA632988D2300089EDA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA622988D2300089EDA3 /* main.m */; };
+		D9F9BA6C2988D39F0089EDA3 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA6B2988D39F0089EDA3 /* MainTabViewController.m */; };
+		D9F9BA742988D4BE0089EDA3 /* StringEncoderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA732988D4BE0089EDA3 /* StringEncoderViewController.mm */; };
+		D9F9BA7F2988D7110089EDA3 /* ASString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA7B2988D7110089EDA3 /* ASString.cpp */; };
+		D9F9BA802988D7110089EDA3 /* StringEncode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA7C2988D7110089EDA3 /* StringEncode.cpp */; };
+		D9F9BA842988DC570089EDA3 /* AppGuardValidatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA832988DC570089EDA3 /* AppGuardValidatorViewController.m */; };
+		D9F9BA872988DD020089EDA3 /* AppGuardValidator.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9F9BA862988DD020089EDA3 /* AppGuardValidator.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D92E77302B301BF4009B7BAA /* SplitStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitStringViewController.h; sourceTree = "<group>"; };
+		D92E77312B301BF4009B7BAA /* SplitStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitStringViewController.m; sourceTree = "<group>"; };
+		D92E77332B302A3C009B7BAA /* TextData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextData.h; sourceTree = "<group>"; };
+		D92E77342B302A3C009B7BAA /* TextData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextData.m; sourceTree = "<group>"; };
+		D98050FF29D14541000C81C1 /* PolicyCheckerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolicyCheckerViewController.h; sourceTree = "<group>"; };
+		D980510029D14541000C81C1 /* PolicyCheckerViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PolicyCheckerViewController.mm; sourceTree = "<group>"; };
+		D980510529D17E15000C81C1 /* Decryptor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decryptor.hpp; sourceTree = "<group>"; };
+		D980510629D17E1C000C81C1 /* Decryptor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Decryptor.mm; sourceTree = "<group>"; };
+		D980510829D274A1000C81C1 /* Base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base64.cpp; sourceTree = "<group>"; };
+		D980510929D274A1000C81C1 /* PacketEncryptor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PacketEncryptor.mm; sourceTree = "<group>"; };
+		D980510A29D274A1000C81C1 /* PacketEncryptor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PacketEncryptor.hpp; sourceTree = "<group>"; };
+		D980510B29D274A1000C81C1 /* Base64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Base64.hpp; sourceTree = "<group>"; };
+		D9F9BA542988D22E0089EDA3 /* AppGuardTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGuardTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F9BA572988D22E0089EDA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9F9BA582988D22E0089EDA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9F9BA5D2988D2300089EDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F9BA602988D2300089EDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9F9BA622988D2300089EDA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9F9BA642988D2300089EDA3 /* AppGuardTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppGuardTools.entitlements; sourceTree = "<group>"; };
+		D9F9BA6A2988D39F0089EDA3 /* MainTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		D9F9BA6B2988D39F0089EDA3 /* MainTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		D9F9BA722988D4BE0089EDA3 /* StringEncoderViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringEncoderViewController.hpp; sourceTree = "<group>"; };
+		D9F9BA732988D4BE0089EDA3 /* StringEncoderViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StringEncoderViewController.mm; sourceTree = "<group>"; };
+		D9F9BA7B2988D7110089EDA3 /* ASString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ASString.cpp; sourceTree = "<group>"; };
+		D9F9BA7C2988D7110089EDA3 /* StringEncode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringEncode.cpp; sourceTree = "<group>"; };
+		D9F9BA7D2988D7110089EDA3 /* StringEncode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringEncode.hpp; sourceTree = "<group>"; };
+		D9F9BA7E2988D7110089EDA3 /* ASString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASString.h; sourceTree = "<group>"; };
+		D9F9BA822988DC570089EDA3 /* AppGuardValidatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppGuardValidatorViewController.h; sourceTree = "<group>"; };
+		D9F9BA832988DC570089EDA3 /* AppGuardValidatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppGuardValidatorViewController.m; sourceTree = "<group>"; };
+		D9F9BA852988DD020089EDA3 /* AppGuardValidator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppGuardValidator.hpp; sourceTree = "<group>"; };
+		D9F9BA862988DD020089EDA3 /* AppGuardValidator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppGuardValidator.mm; sourceTree = "<group>"; };
+		D9F9BA882988F15D0089EDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9F9BA512988D22E0089EDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D92E772F2B301BC8009B7BAA /* SplitString */ = {
+			isa = PBXGroup;
+			children = (
+				D92E77302B301BF4009B7BAA /* SplitStringViewController.h */,
+				D92E77312B301BF4009B7BAA /* SplitStringViewController.m */,
+				D92E77332B302A3C009B7BAA /* TextData.h */,
+				D92E77342B302A3C009B7BAA /* TextData.m */,
+			);
+			path = SplitString;
+			sourceTree = "<group>";
+		};
+		D98050FC29D144D9000C81C1 /* PolicyChecker */ = {
+			isa = PBXGroup;
+			children = (
+				D980510829D274A1000C81C1 /* Base64.cpp */,
+				D980510B29D274A1000C81C1 /* Base64.hpp */,
+				D980510A29D274A1000C81C1 /* PacketEncryptor.hpp */,
+				D980510929D274A1000C81C1 /* PacketEncryptor.mm */,
+				D980510529D17E15000C81C1 /* Decryptor.hpp */,
+				D980510629D17E1C000C81C1 /* Decryptor.mm */,
+				D98050FF29D14541000C81C1 /* PolicyCheckerViewController.h */,
+				D980510029D14541000C81C1 /* PolicyCheckerViewController.mm */,
+			);
+			path = PolicyChecker;
+			sourceTree = "<group>";
+		};
+		D9F9BA4B2988D22E0089EDA3 = {
+			isa = PBXGroup;
+			children = (
+				D9F9BA562988D22E0089EDA3 /* AppGuardTools */,
+				D9F9BA552988D22E0089EDA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F9BA552988D22E0089EDA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F9BA542988D22E0089EDA3 /* AppGuardTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9F9BA562988D22E0089EDA3 /* AppGuardTools */ = {
+			isa = PBXGroup;
+			children = (
+				D92E772F2B301BC8009B7BAA /* SplitString */,
+				D98050FC29D144D9000C81C1 /* PolicyChecker */,
+				D9F9BA882988F15D0089EDA3 /* Info.plist */,
+				D9F9BA812988DA9F0089EDA3 /* AppGuardValidator */,
+				D9F9BA712988D4990089EDA3 /* StringEncoder */,
+				D9F9BA572988D22E0089EDA3 /* AppDelegate.h */,
+				D9F9BA582988D22E0089EDA3 /* AppDelegate.m */,
+				D9F9BA5D2988D2300089EDA3 /* Assets.xcassets */,
+				D9F9BA5F2988D2300089EDA3 /* Main.storyboard */,
+				D9F9BA622988D2300089EDA3 /* main.m */,
+				D9F9BA642988D2300089EDA3 /* AppGuardTools.entitlements */,
+				D9F9BA6A2988D39F0089EDA3 /* MainTabViewController.h */,
+				D9F9BA6B2988D39F0089EDA3 /* MainTabViewController.m */,
+			);
+			path = AppGuardTools;
+			sourceTree = "<group>";
+		};
+		D9F9BA712988D4990089EDA3 /* StringEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				D9F9BA7B2988D7110089EDA3 /* ASString.cpp */,
+				D9F9BA7E2988D7110089EDA3 /* ASString.h */,
+				D9F9BA7C2988D7110089EDA3 /* StringEncode.cpp */,
+				D9F9BA7D2988D7110089EDA3 /* StringEncode.hpp */,
+				D9F9BA722988D4BE0089EDA3 /* StringEncoderViewController.hpp */,
+				D9F9BA732988D4BE0089EDA3 /* StringEncoderViewController.mm */,
+			);
+			path = StringEncoder;
+			sourceTree = "<group>";
+		};
+		D9F9BA812988DA9F0089EDA3 /* AppGuardValidator */ = {
+			isa = PBXGroup;
+			children = (
+				D9F9BA852988DD020089EDA3 /* AppGuardValidator.hpp */,
+				D9F9BA862988DD020089EDA3 /* AppGuardValidator.mm */,
+				D9F9BA822988DC570089EDA3 /* AppGuardValidatorViewController.h */,
+				D9F9BA832988DC570089EDA3 /* AppGuardValidatorViewController.m */,
+			);
+			path = AppGuardValidator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9F9BA532988D22E0089EDA3 /* AppGuardTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F9BA672988D2300089EDA3 /* Build configuration list for PBXNativeTarget "AppGuardTools" */;
+			buildPhases = (
+				D9F9BA502988D22E0089EDA3 /* Sources */,
+				D9F9BA512988D22E0089EDA3 /* Frameworks */,
+				D9F9BA522988D22E0089EDA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppGuardTools;
+			productName = AppGuardTools;
+			productReference = D9F9BA542988D22E0089EDA3 /* AppGuardTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F9BA4C2988D22E0089EDA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D9F9BA532988D22E0089EDA3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D9F9BA4F2988D22E0089EDA3 /* Build configuration list for PBXProject "AppGuardTools" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F9BA4B2988D22E0089EDA3;
+			productRefGroup = D9F9BA552988D22E0089EDA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F9BA532988D22E0089EDA3 /* AppGuardTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9F9BA522988D22E0089EDA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F9BA5E2988D2300089EDA3 /* Assets.xcassets in Resources */,
+				D9F9BA612988D2300089EDA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9F9BA502988D22E0089EDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F9BA802988D7110089EDA3 /* StringEncode.cpp in Sources */,
+				D9F9BA7F2988D7110089EDA3 /* ASString.cpp in Sources */,
+				D9F9BA6C2988D39F0089EDA3 /* MainTabViewController.m in Sources */,
+				D92E77322B301BF4009B7BAA /* SplitStringViewController.m in Sources */,
+				D9F9BA632988D2300089EDA3 /* main.m in Sources */,
+				D980510D29D274A1000C81C1 /* PacketEncryptor.mm in Sources */,
+				D92E77352B302A3C009B7BAA /* TextData.m in Sources */,
+				D980510129D14541000C81C1 /* PolicyCheckerViewController.mm in Sources */,
+				D9F9BA842988DC570089EDA3 /* AppGuardValidatorViewController.m in Sources */,
+				D9F9BA592988D22E0089EDA3 /* AppDelegate.m in Sources */,
+				D980510C29D274A1000C81C1 /* Base64.cpp in Sources */,
+				D9F9BA872988DD020089EDA3 /* AppGuardValidator.mm in Sources */,
+				D980510729D17E1D000C81C1 /* Decryptor.mm in Sources */,
+				D9F9BA742988D4BE0089EDA3 /* StringEncoderViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9F9BA5F2988D2300089EDA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F9BA602988D2300089EDA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9F9BA652988D2300089EDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D9F9BA662988D2300089EDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D9F9BA682988D2300089EDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppGuardTools/AppGuardTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppGuardTools/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NHNENT.AppGuardTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		D9F9BA692988D2300089EDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppGuardTools/AppGuardTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppGuardTools/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NHNENT.AppGuardTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9F9BA4F2988D22E0089EDA3 /* Build configuration list for PBXProject "AppGuardTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F9BA652988D2300089EDA3 /* Debug */,
+				D9F9BA662988D2300089EDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F9BA672988D2300089EDA3 /* Build configuration list for PBXNativeTarget "AppGuardTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F9BA682988D2300089EDA3 /* Debug */,
+				D9F9BA692988D2300089EDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9F9BA4C2988D22E0089EDA3 /* Project object */;
+}

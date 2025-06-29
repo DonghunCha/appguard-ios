@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:script">
+   </FileRef>
+   <FileRef
+      location = "group:AppGuard/AppGuard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tool/AppGuardTools/AppGuardTools.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../AppGuard-CLI/AppGuard-CLI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Protector">
+   </FileRef>
+   <FileRef
+      location = "group:Sample/Appguard-Sample-OjbC/Appguard-Sample-OjbC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Sample/Appguard-Sample/Appguard-Sample.xcodeproj">
+   </FileRef>
+</Workspace>

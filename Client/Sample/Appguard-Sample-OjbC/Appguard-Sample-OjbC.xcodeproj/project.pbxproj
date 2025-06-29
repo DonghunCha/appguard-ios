@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D9948C732994F694005683B2 /* ProtectedApp - Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D9948C762994F694005683B2 /* Build configuration list for PBXAggregateTarget "ProtectedApp - Release" */;
+			buildPhases = (
+				D9948C7F299E176C005683B2 /* Archive */,
+				D9948C792994F6F2005683B2 /* App to IPA */,
+				D9D456572A6E4AA200D2518D /* pip requirements */,
+				D9948C7B299DE3E6005683B2 /* Protector */,
+				D9948C7C299DE41E005683B2 /* ReSigner */,
+				D9948C7D299DE430005683B2 /* IAP to App And Debugger */,
+			);
+			dependencies = (
+			);
+			name = "ProtectedApp - Release";
+			productName = ProtectedApp;
+		};
+		D9948C80299E2436005683B2 /* ProtectedApp - Debug */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D9948C86299E2436005683B2 /* Build configuration list for PBXAggregateTarget "ProtectedApp - Debug" */;
+			buildPhases = (
+				D9948C82299E2436005683B2 /* App to IPA */,
+				D9D456582A6E4ACA00D2518D /* pip requirements */,
+				D9948C83299E2436005683B2 /* Protector */,
+				D9948C84299E2436005683B2 /* ReSigner */,
+				D9948C85299E2436005683B2 /* IAP to App And Debugger */,
+			);
+			dependencies = (
+				D9948C8A299E2443005683B2 /* PBXTargetDependency */,
+			);
+			name = "ProtectedApp - Debug";
+			productName = ProtectedApp;
+		};
+		D9D2EBF72A401A4500FA55EB /* ProtectedApp - Appstore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D9D2EBFD2A401A4500FA55EB /* Build configuration list for PBXAggregateTarget "ProtectedApp - Appstore" */;
+			buildPhases = (
+				D9D2EBF82A401A4500FA55EB /* Archive */,
+				D9D2EBF92A401A4500FA55EB /* App to IPA */,
+				D9D2EC0C2A404FBB00FA55EB /* Protect - requirements */,
+				D9D2EBFA2A401A4500FA55EB /* Protector */,
+				D9D2EBFB2A401A4500FA55EB /* ReSigner */,
+				D9D2EC092A40226700FA55EB /* Result IPA */,
+			);
+			dependencies = (
+			);
+			name = "ProtectedApp - Appstore";
+			productName = ProtectedApp;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D91C74DE2BD73BCC00A57F78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91C74DD2BD73BCC00A57F78 /* CoreLocation.framework */; };
+		D91C74E12BD73F7F00A57F78 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C74DF2BD73F7F00A57F78 /* LocationManager.m */; };
+		D96003AA2938436F0009EB3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96003A92938436F0009EB3B /* AppDelegate.m */; };
+		D96003AD2938436F0009EB3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96003AC2938436F0009EB3B /* SceneDelegate.m */; };
+		D96003B02938436F0009EB3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96003AF2938436F0009EB3B /* ViewController.m */; };
+		D96003B32938436F0009EB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96003B12938436F0009EB3B /* Main.storyboard */; };
+		D96003B5293843700009EB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96003B4293843700009EB3B /* Assets.xcassets */; };
+		D96003B8293843700009EB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96003B6293843700009EB3B /* LaunchScreen.storyboard */; };
+		D96003BB293843700009EB3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96003BA293843700009EB3B /* main.m */; };
+		D96003C7293843BA0009EB3B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96003C6293843BA0009EB3B /* CoreTelephony.framework */; };
+		D96003C9293843C00009EB3B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96003C8293843C00009EB3B /* SystemConfiguration.framework */; };
+		D9676F0529EE38C1009D3168 /* AGAttacker.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9676F0429EE38C1009D3168 /* AGAttacker.mm */; };
+		D9DD6A1429F24EB300E768CA /* AppGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DD6A1329F24EB300E768CA /* AppGuard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9948C89299E2443005683B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D960039D2938436F0009EB3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96003A42938436F0009EB3B;
+			remoteInfo = "Appguard-Sample-OjbC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D91C74DD2BD73BCC00A57F78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D91C74DF2BD73F7F00A57F78 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		D91C74E02BD73F7F00A57F78 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		D96003A52938436F0009EB3B /* Appguard-Sample-OjbC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appguard-Sample-OjbC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96003A82938436F0009EB3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D96003A92938436F0009EB3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D96003AB2938436F0009EB3B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D96003AC2938436F0009EB3B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D96003AE2938436F0009EB3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D96003AF2938436F0009EB3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D96003B22938436F0009EB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D96003B4293843700009EB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D96003B7293843700009EB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D96003B9293843700009EB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96003BA293843700009EB3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D96003C22938439C0009EB3B /* libAppGuard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppGuard.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96003C6293843BA0009EB3B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D96003C8293843C00009EB3B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D9676F0329EE38C1009D3168 /* AGAttacker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AGAttacker.hpp; sourceTree = "<group>"; };
+		D9676F0429EE38C1009D3168 /* AGAttacker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AGAttacker.mm; sourceTree = "<group>"; };
+		D9DD6A1329F24EB300E768CA /* AppGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D96003A22938436F0009EB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91C74DE2BD73BCC00A57F78 /* CoreLocation.framework in Frameworks */,
+				D96003C7293843BA0009EB3B /* CoreTelephony.framework in Frameworks */,
+				D96003C9293843C00009EB3B /* SystemConfiguration.framework in Frameworks */,
+				D9DD6A1429F24EB300E768CA /* AppGuard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D960039C2938436F0009EB3B = {
+			isa = PBXGroup;
+			children = (
+				D96003A72938436F0009EB3B /* Appguard-Sample-OjbC */,
+				D96003A62938436F0009EB3B /* Products */,
+				D96003C12938439C0009EB3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D96003A62938436F0009EB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96003A52938436F0009EB3B /* Appguard-Sample-OjbC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96003A72938436F0009EB3B /* Appguard-Sample-OjbC */ = {
+			isa = PBXGroup;
+			children = (
+				D96003A82938436F0009EB3B /* AppDelegate.h */,
+				D96003A92938436F0009EB3B /* AppDelegate.m */,
+				D91C74E02BD73F7F00A57F78 /* LocationManager.h */,
+				D91C74DF2BD73F7F00A57F78 /* LocationManager.m */,
+				D96003AB2938436F0009EB3B /* SceneDelegate.h */,
+				D96003AC2938436F0009EB3B /* SceneDelegate.m */,
+				D96003AE2938436F0009EB3B /* ViewController.h */,
+				D96003AF2938436F0009EB3B /* ViewController.m */,
+				D96003B12938436F0009EB3B /* Main.storyboard */,
+				D96003B4293843700009EB3B /* Assets.xcassets */,
+				D96003B6293843700009EB3B /* LaunchScreen.storyboard */,
+				D96003B9293843700009EB3B /* Info.plist */,
+				D96003BA293843700009EB3B /* main.m */,
+				D9676F0329EE38C1009D3168 /* AGAttacker.hpp */,
+				D9676F0429EE38C1009D3168 /* AGAttacker.mm */,
+			);
+			path = "Appguard-Sample-OjbC";
+			sourceTree = "<group>";
+		};
+		D96003C12938439C0009EB3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D91C74DD2BD73BCC00A57F78 /* CoreLocation.framework */,
+				D9DD6A1329F24EB300E768CA /* AppGuard.framework */,
+				D96003C8293843C00009EB3B /* SystemConfiguration.framework */,
+				D96003C6293843BA0009EB3B /* CoreTelephony.framework */,
+				D96003C22938439C0009EB3B /* libAppGuard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D96003A42938436F0009EB3B /* Appguard-Sample-OjbC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96003BE293843700009EB3B /* Build configuration list for PBXNativeTarget "Appguard-Sample-OjbC" */;
+			buildPhases = (
+				D9D2EC0B2A4037B500FA55EB /* Build Number Update - Appstore Configuration Only */,
+				D96003A12938436F0009EB3B /* Sources */,
+				D96003A22938436F0009EB3B /* Frameworks */,
+				D96003A32938436F0009EB3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Appguard-Sample-OjbC";
+			productName = "Appguard-Sample-OjbC";
+			productReference = D96003A52938436F0009EB3B /* Appguard-Sample-OjbC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D960039D2938436F0009EB3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D96003A42938436F0009EB3B = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D9948C732994F694005683B2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D96003A02938436F0009EB3B /* Build configuration list for PBXProject "Appguard-Sample-OjbC" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D960039C2938436F0009EB3B;
+			productRefGroup = D96003A62938436F0009EB3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D96003A42938436F0009EB3B /* Appguard-Sample-OjbC */,
+				D9948C732994F694005683B2 /* ProtectedApp - Release */,
+				D9948C80299E2436005683B2 /* ProtectedApp - Debug */,
+				D9D2EBF72A401A4500FA55EB /* ProtectedApp - Appstore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D96003A32938436F0009EB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96003B8293843700009EB3B /* LaunchScreen.storyboard in Resources */,
+				D96003B5293843700009EB3B /* Assets.xcassets in Resources */,
+				D96003B32938436F0009EB3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9948C792994F6F2005683B2 /* App to IPA */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"build/Sample.xcarchive/Products/Applications/Appguard-Sample-OjbC.app",
+			);
+			name = "App to IPA";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#BUILD_PATH=\"$BUILD_DIR/Debug-iphoneos\"\nBUILD_PATH=\"./build/Sample.xcarchive/Products/Applications\"\nAPP_PATH=\"$BUILD_PATH/Appguard-Sample-OjbC.app\"\nTEMP_PATH=\"./temp/protect\"\n\nif [ -d \"out\" ]; then\n    rm -rf \"out\"\nfi \n\nmkdir -p \"$TEMP_PATH/Payload\"\ncp -r \"$APP_PATH\" \"$TEMP_PATH/Payload\"\n\n## Protector Resigner 적용 확인을 위해 info.plist 수정 \n/usr/libexec/PlistBuddy  -c \"Set :CFBundleDisplayName PROTECTED-Appguad-Release\" \"$TEMP_PATH/Payload/Appguard-Sample-OjbC.app/info.plist\"\n/usr/libexec/PlistBuddy  -c \"Set :CFBundleName PROTECTED-Appguad-Release\" \"$TEMP_PATH/unzip/Payload/Appguard-Sample-OjbC.app/info.plist\"\n\n\ncd \"$TEMP_PATH\"\nzip -r app.ipa Payload\ncd -\n";
+		};
+		D9948C7B299DE3E6005683B2 /* Protector */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/temp/protect/app.ipa",
+			);
+			name = Protector;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\n# arm64 lief 설치를 위해 포함 - 환경에 따라 불필요할 수 있음\n# m1 장비에서 arm64 아키턱쳐가 필요할 경우 lief를 제거하고 아래 주석을 풀어 빌드시 arm64용으로 설치 (xcode 내장 python3 로 인한 이슈 대응)\n#pip3 install lief \n\ncp -r $TEMP_PATH/app.ipa ../../../Protector/origin_app.ipa\npython3 ../../../Protector/AppGuard.py -i ../../../Protector/origin_app.ipa -v RJbjBOxk4vT4ROwZ --class_obf --signer \"\\\"Apple Distribution: Kihyup Kim (5QHA7JTZ92)\\\"\" --game\n";
+		};
+		D9948C7C299DE41E005683B2 /* ReSigner */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/out/Protected-App.ipa",
+			);
+			name = ReSigner;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\ncp -r out/Protected-App.ipa ../../../AppGuard-CLI/Protected-App.ipa\npython3 ../../../AppGuard-CLI/IosCLI.py codesign -i ../../../AppGuard-CLI/Protected-App.ipa\ncp -r out/Signed-Protected-App.ipa $TEMP_PATH/class-obfuscate-sample.ipa\n";
+		};
+		D9948C7D299DE430005683B2 /* IAP to App And Debugger */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/temp/protect/class-obfuscate-sample.ipa",
+			);
+			name = "IAP to App And Debugger";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\ncp -r $TEMP_PATH/class-obfuscate-sample.ipa $TEMP_PATH/class-obfuscate-sample.zip \n\nunzip $TEMP_PATH/class-obfuscate-sample.zip -d $TEMP_PATH/unzip\n\ncp -r $TEMP_PATH/unzip/Payload/Appguard-Sample-OjbC.app $TEMP_PATH/Protected-ReSigned-Sample-Release.app\n\n# scheme의 excutable path는 절대경로로만 설정되어 사용자 환경에 따라 path가 달라집니다.\n# 기본 Build Path를 가져와 해당 위치에 보호 작업이 완료된 app 파일을 프로젝트에 설정된 파일과 동일한 이름으로 위치 시켜 path에 영향을 받지 않도록 합니다,\nif [ -d \"$BUILD_DIR/Release-iphoneos/Appguard-Sample-OjbC.app\" ]; then\n    rm -rf \"$BUILD_DIR/Release-iphoneos/Appguard-Sample-OjbC.app\"\nfi \n\ncp -r $TEMP_PATH/Protected-ReSigned-Sample-Release.app $BUILD_DIR/Release-iphoneos/Appguard-Sample-OjbC.app\n";
+		};
+		D9948C7F299E176C005683B2 /* Archive */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Archive;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nTEMP_PATH=\"./temp/protect\"\n\nif [ -d \"./build\" ]; then\n    rm -rf \"./build\"\nfi \n\nif [ -d \"${TEMP_PATH}\" ]; then\n    rm -rf \"${TEMP_PATH}\"\nfi \n\nmkdir -p \"$TEMP_PATH\"\n\nxcodebuild archive -workspace ../../Appguard.xcworkspace \\\n-archivePath \"./build/Sample.xcarchive\" \\\n-scheme Appguard-Sample-OjbC \\\n-configuration Release -arch arm64 only_active_arch=no defines_module=yes \\\n-sdk \"iphoneos\"\n\ncp -r build/Sample.xcarchive \"$TEMP_PATH/Sample.xcarchive\"\n";
+		};
+		D9948C82299E2436005683B2 /* App to IPA */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$BUILD_DIR/Debug-iphoneos/Appguard-Sample-OjbC.app/Appguard-Sample-OjbC",
+			);
+			name = "App to IPA";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nBUILD_PATH=\"$BUILD_DIR/Debug-iphoneos\"\nAPP_PATH=\"$BUILD_PATH/Appguard-Sample-OjbC.app\"\nTEMP_PATH=\"./temp/protect\"\n\nif [ -d \"out\" ]; then\n    rm -rf \"out\"\nfi \n\nif [ -d \"${TEMP_PATH}\" ]; then\n    rm -rf \"${TEMP_PATH}\"\nfi \n\nmkdir -p \"$TEMP_PATH/Payload\"\ncp -r \"$APP_PATH\" \"$TEMP_PATH/Payload\"\n\n## Protector Resigner 적용 확인을 위해 info.plist 수정 \n/usr/libexec/PlistBuddy  -c \"Set :CFBundleDisplayName PROTECTED-Appguad-Debug\" \"$TEMP_PATH/Payload/Appguard-Sample-OjbC.app/info.plist\"\n/usr/libexec/PlistBuddy  -c \"Set :CFBundleName PROTECTED-Appguad-Debug\" \"$TEMP_PATH/unzip/Payload/Appguard-Sample-OjbC.app/info.plist\"\n\n\ncd \"$TEMP_PATH\"\nzip -r app.ipa Payload\nrm -rf Payload\ncd -\n";
+		};
+		D9948C83299E2436005683B2 /* Protector */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/temp/protect/app.ipa",
+			);
+			name = Protector;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\n# arm64 lief 설치를 위해 포함 - 환경에 따라 불필요할 수 있음\n# m1 장비에서 arm64 아키턱쳐가 필요할 경우 lief를 제거하고 아래 주석을 풀어 빌드시 arm64용으로 설치 (xcode 내장 python3 로 인한 이슈 대응)\n#pip3 install lief  \n\ncp -r $TEMP_PATH/app.ipa ../../../Protector/origin_app.ipa\npython3 ../../../Protector/AppGuard.py -i ../../../Protector/origin_app.ipa -v RJbjBOxk4vT4ROwZ --class_obf --signer \"\\\"Apple Development: Kihyup Kim (76KZ9YGT5R)\\\"\" --game\n";
+		};
+		D9948C84299E2436005683B2 /* ReSigner */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/out/Protected-App.ipa",
+			);
+			name = ReSigner;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\ncp -r out/Protected-App.ipa ../../../AppGuard-CLI/Protected-App.ipa\npython3 ../../../AppGuard-CLI/IosCLI.py codesign -i ../../../AppGuard-CLI/Protected-App.ipa\ncp -r out/Signed-Protected-App.ipa $TEMP_PATH/class-obfuscate-sample.ipa\n";
+		};
+		D9948C85299E2436005683B2 /* IAP to App And Debugger */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/temp/protect/class-obfuscate-sample.ipa",
+			);
+			name = "IAP to App And Debugger";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\ncp -r $TEMP_PATH/class-obfuscate-sample.ipa $TEMP_PATH/class-obfuscate-sample.zip \n\nunzip $TEMP_PATH/class-obfuscate-sample.zip -d $TEMP_PATH/unzip\n\ncp -r $TEMP_PATH/unzip/Payload/Appguard-Sample-OjbC.app $TEMP_PATH/Protected-ReSigned-Sample-Debug.app\n\n# scheme의 excutable path는 절대경로로만 설정되어 사용자 환경에 따라 path가 달라집니다.\n# 기본 Build Path를 가져와 해당 위치에 보호 작업이 완료된 app 파일을 프로젝트에 설정된 파일과 동일한 이름으로 위치 시켜 path에 영향을 받지 않도록 합니다,\nif [ -d \"$BUILD_DIR/Debug-iphoneos/Appguard-Sample-OjbC.app\" ]; then\n    rm -rf \"$BUILD_DIR/Debug-iphoneos/Appguard-Sample-OjbC.app\"\nfi \n\ncp -r $TEMP_PATH/Protected-ReSigned-Sample-Debug.app $BUILD_DIR/Debug-iphoneos/Appguard-Sample-OjbC.app\n\n\n";
+		};
+		D9D2EBF82A401A4500FA55EB /* Archive */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Archive;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nTEMP_PATH=\"./temp/protect\"\n\nif [ -d \"./build\" ]; then\n    rm -rf \"./build\"\nfi \n\nif [ -d \"${TEMP_PATH}\" ]; then\n    rm -rf \"${TEMP_PATH}\"\nfi \n\nmkdir -p \"$TEMP_PATH\"\n\nxcodebuild archive -workspace ../../Appguard.xcworkspace \\\n-archivePath \"./build/Sample.xcarchive\" \\\n-scheme Appguard-Sample-OjbC \\\n-configuration Appstore -arch arm64 only_active_arch=no defines_module=yes \\\n-sdk \"iphoneos\"\n\ncp -r build/Sample.xcarchive \"$TEMP_PATH/Sample.xcarchive\"\n\necho \"[BUILD] archive\"\n";
+		};
+		D9D2EBF92A401A4500FA55EB /* App to IPA */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"build/Sample.xcarchive/Products/Applications/Appguard-Sample-OjbC.app",
+			);
+			name = "App to IPA";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#BUILD_PATH=\"$BUILD_DIR/Debug-iphoneos\"\nBUILD_PATH=\"./build/Sample.xcarchive/Products/Applications\"\nAPP_PATH=\"$BUILD_PATH/Appguard-Sample-OjbC.app\"\nTEMP_PATH=\"./temp/protect\"\n\nif [ -d \"out\" ]; then\n    rm -rf \"out\"\nfi \n\nmkdir -p \"$TEMP_PATH/Payload\"\ncp -r \"$APP_PATH\" \"$TEMP_PATH/Payload\"\n\n## Protector Resigner 적용 확인을 위해 info.plist 수정 \n/usr/libexec/PlistBuddy  -c \"Set :CFBundleDisplayName PROTECTED-Appguad-Appstore\" \"$TEMP_PATH/Payload/Appguard-Sample-OjbC.app/info.plist\"\n\ncd \"$TEMP_PATH\"\nzip -r app.ipa Payload\ncd -\n\necho \"[BUILD] APP to IAP\"\n";
+		};
+		D9D2EBFA2A401A4500FA55EB /* Protector */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/temp/protect/app.ipa",
+			);
+			name = Protector;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\ncp -r $TEMP_PATH/app.ipa ../../../Protector/origin_app.ipa\npython3 ../../../Protector/AppGuard.py -i ../../../Protector/origin_app.ipa -v RJbjBOxk4vT4ROwZ --class_obf --signer \"\\\"Apple Distribution: Kihyup Kim (5QHA7JTZ92)\\\"\" --game\n\n\necho \"[BUILD] Protector\"\n";
+		};
+		D9D2EBFB2A401A4500FA55EB /* ReSigner */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/out/Protected-App.ipa",
+			);
+			name = ReSigner;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\n\ncp -r out/Protected-App.ipa ../../../AppGuard-CLI/Protected-App.ipa\npython3 ../../../AppGuard-CLI/IosCLI.py codesign -i ../../../AppGuard-CLI/Protected-App.ipa\ncp -r out/Signed-Protected-App.ipa $TEMP_PATH/class-obfuscate-sample.ipa\n\necho \"[BUILD] ReSign\"\n";
+		};
+		D9D2EC092A40226700FA55EB /* Result IPA */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Result IPA";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTEMP_PATH=\"./temp/protect\"\ncp -r $TEMP_PATH/class-obfuscate-sample.ipa ./out/Appstore.ipa \n\necho \"[BUILD] Appstore.ipa\"\n\nyes | pip3 uninstall lief\n";
+		};
+		D9D2EC0B2A4037B500FA55EB /* Build Number Update - Appstore Configuration Only */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number Update - Appstore Configuration Only";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${CONFIGURATION}\" = \"Appstore\" ]; then\n    current_epoch_time=$(date +%s)\n    buildNumber=$current_epoch_time\n    echo \"[BUILD] $buildNumber\"\n\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n    \n    touch \"./temp/$buildNumber.txt\"\nfi\n";
+		};
+		D9D2EC0C2A404FBB00FA55EB /* Protect - requirements */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Protect - requirements";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# arm64 lief 설치를 위해 포함 - 환경에 따라 불필요할 수 있음\n# m1 장비에서 arm64 아키턱쳐가 필요할 경우 lief를 제거하고 아래 주석을 풀어 빌드시 arm64용으로 설치 (xcode 내장 python3 로 인한 이슈 대응)\nyes | pip3 uninstall lief\npip3 install -r ../../../Protector/requirements.txt\npip3 install -r ../../../AppGuard-CLI/requirements.txt\n";
+		};
+		D9D456572A6E4AA200D2518D /* pip requirements */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "pip requirements";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# arm64 lief 설치를 위해 포함 - 환경에 따라 불필요할 수 있음\n# m1 장비에서 arm64 아키턱쳐가 필요할 경우 lief를 제거하고 아래 주석을 풀어 빌드시 arm64용으로 설치 (xcode 내장 python3 로 인한 이슈 대응)\nyes | pip3 uninstall lief\npip3 install -r ../../../Protector/requirements.txt\npip3 install -r ../../../AppGuard-CLI/requirements.txt\n\n";
+		};
+		D9D456582A6E4ACA00D2518D /* pip requirements */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "pip requirements";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# arm64 lief 설치를 위해 포함 - 환경에 따라 불필요할 수 있음\n# m1 장비에서 arm64 아키턱쳐가 필요할 경우 lief를 제거하고 아래 주석을 풀어 빌드시 arm64용으로 설치 (xcode 내장 python3 로 인한 이슈 대응)\nyes | pip3 uninstall lief\npip3 install -r ../../../Protector/requirements.txt\npip3 install -r ../../../AppGuard-CLI/requirements.txt\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96003A12938436F0009EB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91C74E12BD73F7F00A57F78 /* LocationManager.m in Sources */,
+				D96003B02938436F0009EB3B /* ViewController.m in Sources */,
+				D96003AA2938436F0009EB3B /* AppDelegate.m in Sources */,
+				D96003BB293843700009EB3B /* main.m in Sources */,
+				D9676F0529EE38C1009D3168 /* AGAttacker.mm in Sources */,
+				D96003AD2938436F0009EB3B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9948C8A299E2443005683B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96003A42938436F0009EB3B /* Appguard-Sample-OjbC */;
+			targetProxy = D9948C89299E2443005683B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D96003B12938436F0009EB3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96003B22938436F0009EB3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D96003B6293843700009EB3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96003B7293843700009EB3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D96003BC293843700009EB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D96003BD293843700009EB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D96003BF293843700009EB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QHA7JTZ92;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Appguard-Sample-OjbC/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppGuard-Sample-Objc";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4.11;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhn.cloud.client.sdk.appguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "appguard dev 250103";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D96003C0293843700009EB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QHA7JTZ92;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Appguard-Sample-OjbC/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppGuard-Sample-Objc";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4.11;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhn.cloud.client.sdk.appguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "appguard adhoc 250103";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		D9948C742994F694005683B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9948C752994F694005683B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9948C87299E2436005683B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9948C88299E2436005683B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9D2EBFE2A401A4500FA55EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9D2EBFF2A401A4500FA55EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9D2EC002A401B0500FA55EB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Appstore;
+		};
+		D9D2EC012A401B0500FA55EB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QHA7JTZ92;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Appguard-Sample-OjbC/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppGuard-Sample-Objc";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4.11;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhn.cloud.client.sdk.appguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "appguard appstore 250103";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Appstore;
+		};
+		D9D2EC022A401B0500FA55EB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Appstore;
+		};
+		D9D2EC032A401B0500FA55EB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Appstore;
+		};
+		D9D2EC042A401B0500FA55EB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QHA7JTZ92;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Appstore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D96003A02938436F0009EB3B /* Build configuration list for PBXProject "Appguard-Sample-OjbC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96003BC293843700009EB3B /* Debug */,
+				D96003BD293843700009EB3B /* Release */,
+				D9D2EC002A401B0500FA55EB /* Appstore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96003BE293843700009EB3B /* Build configuration list for PBXNativeTarget "Appguard-Sample-OjbC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96003BF293843700009EB3B /* Debug */,
+				D96003C0293843700009EB3B /* Release */,
+				D9D2EC012A401B0500FA55EB /* Appstore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9948C762994F694005683B2 /* Build configuration list for PBXAggregateTarget "ProtectedApp - Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9948C742994F694005683B2 /* Debug */,
+				D9948C752994F694005683B2 /* Release */,
+				D9D2EC022A401B0500FA55EB /* Appstore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9948C86299E2436005683B2 /* Build configuration list for PBXAggregateTarget "ProtectedApp - Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9948C87299E2436005683B2 /* Debug */,
+				D9948C88299E2436005683B2 /* Release */,
+				D9D2EC032A401B0500FA55EB /* Appstore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D2EBFD2A401A4500FA55EB /* Build configuration list for PBXAggregateTarget "ProtectedApp - Appstore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D2EBFE2A401A4500FA55EB /* Debug */,
+				D9D2EBFF2A401A4500FA55EB /* Release */,
+				D9D2EC042A401B0500FA55EB /* Appstore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D960039D2938436F0009EB3B /* Project object */;
+}
